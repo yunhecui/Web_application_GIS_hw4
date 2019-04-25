@@ -1,0 +1,52 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <title>World Population Map</title>
+    <meta name="description" content="This is a map showing some sample library location">
+    <meta name="author" content="Yunhe">
+    <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+
+  </head>
+
+  <body>
+    <div id="mapContainer"></div>
+    <div id='map' style='width: 800px; height: 800px;'></div>
+
+    <div class='map-overlay top'>
+      <div class = 'map-overlay-inner'>
+        <h2> World captial and population</h2>
+        <h4> All countries in the world. Population shown with choropleth map</h4>
+        <h4> Author: Yunhe Cui, Using Mapboxgl API</h4>
+      </div>
+    </div>
+
+    <div id='state-legend' class='legend'>
+      <h4>Population</h4>
+      <div><span style='background-color: #723122'></span>1,000,000,000</div>
+      <div><span style='background-color: #8B4225'></span>500,000,000</div>
+      <div><span style='background-color: #A25626'></span>100,000,000</div>
+      <div><span style='background-color: #B86B25'></span>50,000,000</div>
+      <div><span style='background-color: #CA8323'></span>10,000,000</div>
+      <div><span style='background-color: #DA9C20'></span>5,000,000</div>
+      <div><span style='background-color: #E6B71E'></span>1,000,000</div>
+      <div><span style='background-color: #EED322'></span>100,000</div>
+      <div><span style='background-color: #F2F12D'></span>0</div>
+    </div>
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    </script>
+    <script src="js/capital.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+
+</html>
