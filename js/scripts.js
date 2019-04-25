@@ -39,32 +39,6 @@ map.on('load', function() {
       }
 
     });
-
-      // map.addLayer({
-      // 'id': 'maine',
-      // 'type': 'fill',
-      // 'source':
-      // {
-      //   'type': 'geojson',
-      //   'data': {
-      //     'type': 'Feature',
-      //     'geometry': {
-      //       'type': 'Polygon',
-      //       'coordinates': [[
-      //         [286.0112428665161,40.696225281781494],
-      //         [286.0109853744507,40.69215797767899],
-      //         [286.0190963745117,40.68880633250933],
-      //         [286.0154914855957,40.69609513189582],
-      //         [286.0112428665161,40.696225281781494]]]
-      //         }
-      //       }
-      //     },
-      // 'layout': {},
-      // 'paint': {
-      //       'fill-color': '#088',
-      //       'fill-opacity': 0.8
-      //     }
-      //   });
       map.addSource('borough-shp', {
         type: 'geojson',
         data: './data/borough.geojson',
@@ -81,6 +55,29 @@ map.on('load', function() {
 
 
 });
+
+
+
+document.getElementById('fly').addEventListener('click', function () {
+// Fly to a random location by offsetting Beijing latlong, within 10
+
+map.flyTo({
+  center: [
+    116 + (Math.random() - 0.5) * 20,
+    39.9 + (Math.random() - 0.5) * 20],
+  zoom:10,
+  });
+});
+
+document.getElementById('nyc').addEventListener('click', function () {
+// Fly to a random location by offsetting new york city latlong
+map.flyTo({
+  center: [-74.00, 40.7,],
+  zoom:10,
+  });
+});
+
+
 
 
 var popup = new mapboxgl.Popup({ offset: 40 })

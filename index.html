@@ -22,6 +22,13 @@
         <h2> World captial and population</h2>
         <h4> All countries in the world. Population shown with choropleth map</h4>
         <h4> Author: Yunhe Cui, Using Mapboxgl API</h4>
+      <div class="info-box">
+          <h3>Fly to somewhere</h3>
+      <!-- These buttons use data attributes, which we can easily pull using jquery -->
+          <button class="flyto" id="fly">Fly in Asia!</button>
+          <hr/>
+          <button class="flyto" id="nyc">Fly to New York City</button>
+      </div>
       </div>
     </div>
 
@@ -37,6 +44,8 @@
       <div><span style='background-color: #EED322'></span>100,000</div>
       <div><span style='background-color: #F2F12D'></span>0</div>
     </div>
+
+
 
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
     <script

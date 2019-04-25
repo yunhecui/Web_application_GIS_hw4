@@ -1,21 +1,28 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin:10px
+}
 #mapContainer {
-  height: 600px;
+  height: 650px;
   width: 800px;
   background: lightgray;
-  margin: 0 auto;
+  margin: 100px 100px 0px 0px;
 }
 .map-overlay {
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 position: absolute;
-width: 25%;
-top: 540px;
-left: 0;
+height: 15px
+width: 80px;
+top: 0px;
+left: 0px;
 padding: 10px;
 }
 
 .map-overlay .map-overlay-inner {
-background-color: #fff;
-box-shadow:0 1px 2px rgba(0, 0, 0, 0.20);
+display: inline-block;
+ /* background-color: #fff; */
+/* box-shadow:0 1px 2px rgba(0, 0, 0, 0.20); */
 border-radius: 3px;
 padding: 10px;
 margin-bottom: 10px;
@@ -36,7 +43,7 @@ margin: 0 0 10px;
 .legend {
 background-color: #fff;
 border-radius: 3px;
-bottom: 30px;
+bottom: 20px;
 box-shadow: 0 1px 2px rgba(0,0,0,0.10);
 font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 padding: 10px;
@@ -55,4 +62,35 @@ height: 10px;
 margin-right: 5px;
 width: 10px;
 }
- 
+
+#sidebar {
+  width: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 15px;
+}
+.info-box {
+  display: inline-block;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background-color: #c3c3c3;
+  padding: 12px;
+  border-radius: 11px;
+  box-shadow: 1px 1px 7px #525252;
+  margin-bottom:15px
+}
+
+h3 {
+  margin: 0 0 15px 0;
+  font-size: 1rem;
+}
+
+button {
+  padding: 5px;
+  font-weight: 500;
+  border-radius: 5px;
+}
