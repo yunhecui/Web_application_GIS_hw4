@@ -80,7 +80,7 @@ map.flyTo({
 document.getElementById('world').addEventListener('click', function () {
 // Fly to a random location by offsetting new york city latlong
 map.flyTo({
-  enter: [150, 35],
+  center: [150, 35],
   zoom: 0.55,
   });
 });
