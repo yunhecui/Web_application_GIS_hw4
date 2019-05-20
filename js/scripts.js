@@ -94,7 +94,8 @@ var popup = new mapboxgl.Popup({ offset: 40 })
 Captial.forEach(function(cap) {
   new mapboxgl.Marker({
     color: 'green',
-    size: 'small'
+    size: 'small',
+    
   })
     .setLngLat([cap.long, cap.lat])
     .setPopup(new mapboxgl.Popup({ offset: 5 })

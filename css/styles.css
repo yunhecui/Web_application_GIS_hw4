@@ -5,7 +5,7 @@ html, body {
 }
 #mapContainer {
   height: 650px;
-  width: 800px;
+  width: 0px;
   background: lightgray;
   margin: 100px 100px 0px 0px;
 }
